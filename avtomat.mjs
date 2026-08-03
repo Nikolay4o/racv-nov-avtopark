@@ -14,7 +14,7 @@
 
 import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-core';
 
 // ---------- аргументи ----------
 const argv = process.argv.slice(2);
