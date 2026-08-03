@@ -1,0 +1,29 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2018 Volkswagen Golf Alltrack, Mk7 estate with 4MOTION all-wheel drive. Champagne silver-beige metallic paint with a fine metallic flake. Silver multi-spoke alloy wheels. Raised ride height with dark grey plastic wheel-arch extensions and matching sill cladding running the length of the car. Brushed silver skid-plate elements under the front and rear bumpers, silver roof rails, chrome window surrounds, honeycomb lower grille, chrome grille bars with the VW roundel, "4MOTION" badge on the tailgate, twin chrome exhaust tips on the left side. Long estate roofline. Interior: black, steering wheel with the VW roundel and an ALLTRACK badge, twin analogue dials with red needles and a small display between them, a square central touchscreen in the dashboard, physical climate dials below, a DSG automatic gear selector on the console, dark brushed trim strips across the dashboard and doors.
+
+COLOUR DISCIPLINE
+The paint is a warm champagne silver, not plain grey. Under the gold rim light it should glow softly and show fine metallic sparkle in the highlights. Keep the dark plastic cladding clearly distinct from the body paint, and make the raised stance obvious — this car sits higher than a normal estate.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Long estate — step back so the whole body fits with margin on both sides. Straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Chrome grille bars with the roundel, both headlights, the silver skid plate and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit, VW roundel centred on the tailgate, "4MOTION" badge, silver roof rails, rear skid plate and twin chrome exhaust tips on the left, rear wheel visible. The long estate roofline and the dark cladding along the sills must read clearly. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the VW roundel and ALLTRACK badge, twin analogue dials with red needles, the square central touchscreen, climate dials and the DSG gear selector on the console. Black cabin with dark brushed trim. Screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

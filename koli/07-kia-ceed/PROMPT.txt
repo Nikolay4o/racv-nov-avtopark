@@ -1,0 +1,29 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2022 Kia Ceed SW, five-door estate / station wagon. White paint. Multi-spoke alloy wheels with machined silver faces and black pockets. The narrow "tiger-nose" grille in gloss black with a chrome surround, carrying the current flat KIA lettering emblem. Slim swept LED headlights with an L-shaped daytime running light signature, chrome window surrounds, black roof rails, a long estate roofline ending in a small roof spoiler, "CEED" lettering on the tailgate. Interior: black, steering wheel with the KIA lettering emblem, twin analogue dials with a small screen between them, a free-standing central touchscreen on the dashboard, physical climate dials below it, satin silver trim strips on the doors and dashboard.
+
+COLOUR DISCIPLINE
+White against a dark set must keep detail. Hold the highlights on the bonnet, roof and shoulder, keep the white clean and neutral — never grey, never yellow, never blown to paper-white. Let the gold rim light run the full length of the roofline; on an estate that long line is the whole shot.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Because this is a long estate, step back far enough that the whole body including the rear overhang sits comfortably in frame with margin on both sides. Straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Full tiger-nose grille, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit — slim horizontal LED units at the corners of the tailgate — KIA lettering emblem centred, "CEED" badge, roof spoiler above, twin chrome exhaust tips in the rear bumper, rear wheel visible. The long estate roofline must read clearly. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the KIA emblem, twin analogue dials, the free-standing central touchscreen and the climate dials below it. Black cabin with satin silver trim. Screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

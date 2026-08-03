@@ -1,0 +1,29 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2019 Peugeot 2008, first-generation small crossover (facelift). Deep red metallic paint. Dark multi-spoke alloy wheels with machined silver edges. Chrome grille surround with the flat Peugeot lion emblem, swept headlights with a chrome brow, brushed silver skid-plate elements under the front and rear bumpers, black wheel-arch cladding and black side sills, silver roof rails, chrome window surrounds, small roof spoiler, "2008" lettering on the tailgate. Compact, slightly raised crossover stance. Interior: black, small flat-topped steering wheel with the lion emblem, a digital instrument cluster set high on the dashboard, a wide central touchscreen with a navigation map, a row of chrome toggle switches below it, carbon-look textured dashboard trim, satin metal air vent surrounds.
+
+COLOUR DISCIPLINE
+Red is the one colour that can wreck this set. Keep it a deep, rich metallic red with detail held on the shadow side — no neon glow, no orange cast, no clipped blown-out red on the bonnet or doors. The warm gold rim light must sit on top of the red without turning it orange.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Chrome grille with the lion emblem, both headlights, the silver skid plate and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: the three-claw LED signature per side. Lion emblem centred on the tailgate, "2008" lettering, silver roof rails, silver rear skid plate, rear wheel visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: small steering wheel with the lion emblem, the raised digital instrument cluster, the wide central touchscreen and the row of chrome toggle switches beneath it. Black cabin with carbon-look dashboard texture. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

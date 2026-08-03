@@ -1,0 +1,32 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2016 Peugeot 308 SW, five-door estate, GT Line trim. Deep metallic blue paint with a strong metallic flake. Silver diamond-cut multi-spoke alloy wheels. Chrome grille surround with the flat Peugeot lion emblem, swept headlights with an LED daytime running light strip along the lower edge, chrome window surrounds running the full length of the glasshouse, panoramic glass roof, silver roof rails, "308" and "GT Line" badges, twin trapezoidal chrome exhaust tips in a body-colour diffuser. Long, low estate proportions. Interior: black with RED contrast stitching on the seats, steering wheel and gear boot — that red stitching is the GT Line signature and must be present. Small flat-topped i-Cockpit steering wheel with the lion emblem, instrument dials seen above the wheel rim, a central touchscreen with a slim row of shortcut buttons beneath it, a manual gearstick with a chrome-trimmed boot, satin metal trim on the console.
+
+CRITICAL — CLEAN PAINT
+The bonnet and windscreen must be completely clean: only soft studio highlights. No reflected letters, no reflected signage, no reflected logos or shapes of any kind anywhere in the paint or glass.
+
+COLOUR DISCIPLINE
+The blue is deep and saturated with visible metallic sparkle where the key light hits. Keep it jewel-like against the near-black set — never navy-black, never washed-out sky blue.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Long estate — step back so the whole body fits with margin. Straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Chrome grille with the lion emblem, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: the three-claw LED signature per side. Lion emblem centred on the tailgate, "GT Line" badge, chrome window trim along the flank, twin chrome exhaust tips, rear wheel visible. The long estate roofline must read clearly. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the passenger side looking across the cabin: small i-Cockpit steering wheel with the lion emblem, dials above the wheel rim, the central touchscreen with its row of shortcut buttons, the manual gearstick with chrome-trimmed boot. Black cabin with red contrast stitching clearly visible on the seats, wheel and gear boot. Screen is on but shows only a neutral abstract dark interface with no legible text, no icons, no logos. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No reflected signage in the paint or glass. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

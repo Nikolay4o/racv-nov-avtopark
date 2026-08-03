@@ -1,0 +1,29 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2022 Volkswagen T-Roc, compact crossover SUV. Gloss black paint. Two-tone alloy wheels — machined silver faces with black inserts. Wide chrome grille bar carrying the VW roundel, running into slim LED headlights. Silver roof rails, chrome window surrounds, black wheel-arch trim, silver skid-plate inserts front and rear. "T-ROC" lettering across the tailgate. Raised crossover stance, short overhangs, coupé-ish roofline with a small roof spoiler. Interior: black, steering wheel with the VW roundel, digital instrument cluster, a free-standing central touchscreen on top of the dashboard, carbon-look dashboard trim, physical climate controls below the screen.
+
+COLOUR DISCIPLINE
+Black on a dark set is the hardest shot. Push the warm rim light so the roofline, the shoulder crease, the wheel arches and the raised stance are clearly drawn. The machined silver wheel faces and the chrome grille bar should catch the key light and act as a second focal point. No panel may collapse into flat black.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Full grille with the chrome bar and roundel, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit, VW roundel centred on the tailgate with "T-ROC" lettering beneath, roof spoiler above, silver skid plate in the rear bumper, rear wheel visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the VW roundel, digital instrument cluster and the free-standing central touchscreen. Black cabin, carbon-look dashboard trim, climate dials below the screen. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

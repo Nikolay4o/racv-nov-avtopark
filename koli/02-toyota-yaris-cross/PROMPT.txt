@@ -1,0 +1,30 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2025 Toyota Yaris Cross Hybrid, small crossover SUV. Two-tone body: warm sand / champagne beige metallic paint with a contrasting gloss black roof and black A-pillars. Matte black wheel-arch cladding and black lower door trim all around. Dark two-tone alloy wheels with a machined face. Slim LED headlights with the Toyota emblem in the centre of a body-coloured upper grille and a wide black lower grille. Black roof rails, small roof spoiler, "HYBRID" badge on the front wing. Short overhangs, high stance, chunky proportions for its size. Interior: black, with bronze contrast stitching on the dashboard and door cards, a digital instrument cluster, a tablet-style central touchscreen standing proud of the dashboard, circular air vents on the passenger side, physical climate dials below the screen.
+
+COLOUR DISCIPLINE
+The sand paint is the star: keep it warm and creamy against the near-black set and let the gold rim light rake along the shoulder line. It must not drift orange, muddy, pink or grey. The black roof must stay separated from the black background by clear rim light along the roof edge.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no windows, no props.
+- Floor: polished dark grey-black with a soft, believable reflection of the car at roughly 25% opacity that fades out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a single clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the edges of the bodywork. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- A faint warm halo behind the car separates it from the background. Nothing else in frame.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Freshly detailed glossy paint, clean dark glass, matte black tyres. Sharp throughout, rich blacks that still hold detail. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Full grille, both headlights and the front wheel in frame. The two-tone split between sand body and black roof must read instantly.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: slim wraparound LED units joined by a dark trim strip across the tailgate, Toyota emblem centred, roof spoiler above. Rear bumper with black lower cladding and the rear wheel clearly visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the Toyota emblem, digital instrument cluster, the raised central touchscreen and the circular vents. Black cabin with bronze contrast stitching. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, studio background dark and softly defocused through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

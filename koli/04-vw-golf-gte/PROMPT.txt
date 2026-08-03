@@ -1,0 +1,29 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2023 Volkswagen Golf GTE, Mk8 five-door hatchback, plug-in hybrid hot-hatch version. Pure white paint. Black multi-spoke alloy wheels with blue brake callipers behind them. The signature illuminated blue light strip runs horizontally across the narrow grille and connects the two slim LED headlights. Blue accent line along the front lip spoiler, small "GTE" badge on the front wing and on the grille, gloss black roof spoiler, gloss black mirror caps, honeycomb lower air intakes. Sporty, planted, low stance. Interior: black, flat-bottomed sports steering wheel with the VW roundel and a GTE badge, fully digital cockpit, wide central touchscreen with touch-slider controls beneath it, blue ambient light lines running across the dashboard and door cards, black seats with blue contrast stitching.
+
+COLOUR DISCIPLINE
+White against a dark set blows out easily. Hold the highlights on the bonnet and roof, keep the white clean and cool-neutral — never grey, never cream, never yellow. The blue grille strip, the blue callipers and the blue ambient interior lighting must stay saturated and clearly visible; they are the identity of this car.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and the blue grille light strip switched on. Full grille, both headlights, front lip and the front wheel in frame. Aggressive but clean hot-hatch stance.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Slim LED tail lights lit, VW roundel centred on the tailgate with the GTE badge beneath it, black roof spoiler, body-colour diffuser with hidden exhausts, rear wheel with blue calliper visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: flat-bottomed steering wheel with the VW roundel and GTE badge, digital cockpit, the wide central touchscreen. Black cabin with blue ambient light lines across the dashboard and doors. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Studio background dark and softly defocused through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

@@ -1,0 +1,29 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2020 Peugeot 3008, compact SUV, second generation. Olive / khaki green metallic paint with a fine metallic flake. Two-tone diamond-cut alloy wheels — machined silver faces with dark grey pockets. Wide chequered grille with a chrome surround and the flat Peugeot lion emblem, sharp swept headlights with vertical claw-shaped LED daytime running lights dropping into the front bumper. Black roof rails, gloss black roof, chrome window surrounds, black wheel-arch cladding, "3008" lettering on the tailgate. Interior: black, Peugeot i-Cockpit — small flat-topped steering wheel, digital instrument cluster mounted high above the wheel rim, central touchscreen angled toward the driver with a row of chrome piano-key switches beneath it, satin metal trim on the console and doors.
+
+COLOUR DISCIPLINE
+This paint is the trickiest in the fleet: a muted olive-khaki green with metallic sparkle. It must NOT turn brown, bronze, grey or army green. Under the warm rim light it should read as a deep, expensive olive with visible metallic flake in the highlights and a cooler, greener tone in the shadows.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and the vertical claw daytime running lights on. Full chequered grille, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: three horizontal claw-shaped LED bars per side on a gloss black rear panel spanning the tailgate. "3008" lettering, black roof spoiler, rear wheel visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: small i-Cockpit steering wheel with the lion emblem, the raised digital instrument cluster seen above the wheel rim, the central touchscreen and the chrome piano-key switches. Black cabin, satin metal trim. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.

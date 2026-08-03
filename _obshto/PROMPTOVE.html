@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Промптове за новите снимки на колите — Rent a Car Vratsa</title>
+<style>
+  :root{--bg:#0a0a0a;--surface:#141414;--line:#2a2a2a;--text:#F5F5F0;--muted:#B0B0AA;--gold:#D4AF37;--ok:#4ade80;
+        --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font:15px/1.6 'Inter',system-ui,Segoe UI,sans-serif;padding:0 0 70px}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 18px}
+  header{border-bottom:1px solid var(--line);padding:34px 0 24px;margin-bottom:22px;background:linear-gradient(180deg,#111,var(--bg))}
+  h1{font-size:25px;letter-spacing:-.02em}
+  h1 span{color:var(--gold)}
+  .lede{color:var(--muted);margin-top:6px;max-width:75ch}
+
+  .tip{background:#141008;border:1px solid #3d3116;border-left:3px solid var(--gold);border-radius:10px;padding:14px 16px;margin:14px 0;color:#ded7c4}
+  .tip b{color:#fff}
+  .tip.plain{background:#0f0f0f;border-color:#2a2a2a;border-left-color:#555;color:var(--muted)}
+
+  .car{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;margin:22px 0}
+  .top{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+  .thumb{width:240px;flex:none;border-radius:10px;border:1px solid #333;overflow:hidden;background:#000}
+  .thumb img{width:100%;display:block}
+  .thumb .cap{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;color:#6f6f6a;padding:6px 8px;text-align:center;border-top:1px solid #262626}
+  .info{flex:1;min-width:250px}
+  .n{display:inline-block;font-family:var(--mono);font-size:12px;color:#0a0a0a;background:var(--gold);border-radius:6px;padding:2px 9px;font-weight:700;margin-bottom:8px}
+  .name{font-size:21px;font-weight:600;letter-spacing:-.01em}
+  .desc{color:var(--muted);margin-top:6px}
+  .desc b{color:#fff;font-weight:600}
+  .links{font-family:var(--mono);font-size:11.5px;margin-top:10px;padding:9px 11px;background:#0f0f0f;border:1px dashed #303030;border-radius:8px;line-height:1.9}
+  .links a{color:#e8d9a8}
+
+  .prompt{position:relative;background:#000;border:1px solid var(--line);border-radius:10px;margin-top:14px}
+  .prompt pre{font-family:var(--mono);font-size:12.5px;line-height:1.6;color:#d8d8d2;padding:44px 16px 16px;white-space:pre-wrap;word-break:break-word;overflow-x:auto}
+  .copy{position:absolute;top:9px;right:9px;background:var(--gold);color:#0a0a0a;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:none;border-radius:6px;padding:7px 14px;cursor:pointer}
+  .copy:hover{background:#e8c65a}
+  .copy.done{background:var(--ok)}
+  .plabel{position:absolute;top:14px;left:16px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#6f6f6a}
+  code{font-family:var(--mono);font-size:12.5px;background:#000;border:1px solid var(--line);border-radius:4px;padding:1px 5px;color:#e8d9a8}
+  a{color:var(--gold);text-decoration:none}
+  @media(max-width:640px){.thumb{width:100%}.prompt pre{font-size:11.5px}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <h1>Промптове за <span>новите снимки на колите</span></h1>
+  <p class="lede">11 промпта, по един на кола. Всеки описва колата толкова подробно, че <b>работи без прикачени снимки</b> — само копираш и пействаш. Картинката отляво ти казва коя кола е кой промпт.</p>
+</div></header>
+
+<div class="wrap">
+
+<div class="tip">
+  <b>Как се ползва:</b> нов чат в ChatGPT → пействаш промпта → излизат 3 кадъра един след друг (при вана 4). Ако спре след първия, пиши <code>продължи с кадър 2</code>. <b>Една кола = един чат</b> — иначе моделът почва да прелива цветове между колите.
+</div>
+
+<div class="tip plain">
+  Ако все пак можеш да прикачваш: отвори линковете „текущи снимки" под всяка кола, свали ги и ги прикачи към промпта. Тогава добави и този ред най-отгоре: <code>Match the attached photos exactly for colour, wheels and trim — but ignore everything in them that is not the car (wall sign, QR code, phone number, icon strip, plate lettering).</code> С прикачени снимки резултатът е още по-точен, без тях промптът пак си работи.
+</div>
+
+<!-- 1 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/peugeot-5008.jpg" alt="Peugeot 5008"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 1</div>
+    <div class="name">Peugeot 5008</div>
+    <div class="desc"><b>Черният голям 7-местен SUV.</b> Най-новият в парка (2024), 50 €/ден.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-5008/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-5008/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-5008/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Peugeot 5008 · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2024 Peugeot 5008, latest generation, large seven-seat SUV. Gloss black metallic paint. Black multi-spoke alloy wheels with a dark diamond-cut face. Blacked-out grille with the modern shield-shaped Peugeot lion emblem in the centre. Three vertical claw-shaped LED daytime running light blades falling from each headlight down the front bumper — this is the model's signature and must be clearly visible. Black roof rails, black window surrounds, subtle "5008" lettering on the bonnet edge. Long SUV proportions, muscular shoulder line, flush door handles. Interior: black, Peugeot i-Cockpit — small flat-topped steering wheel, digital instrument cluster mounted high above the wheel rim, wide central touchscreen angled toward the driver, a row of chrome piano-key switches beneath it, brushed metal trim on the centre console.
+
+COLOUR DISCIPLINE
+Black on a dark set is the hardest shot in the fleet. Push the warm rim light so the roofline, the shoulder crease, the wheel arches and the front bumper edges are clearly drawn in warm light. Every panel keeps readable detail — the car must never collapse into a silhouette or a black blob.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no windows, no props.
+- Floor: polished dark grey-black with a soft, believable reflection of the car at roughly 25% opacity that fades out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a single clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the edges of the bodywork. This is the signature of the set — clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- A faint warm halo behind the car separates it from the background. Nothing else in frame.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Freshly detailed glossy paint, clean dark glass, matte black tyres with no shine-spray look. Sharp throughout, rich blacks that still hold detail. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later, so nothing important may touch the frame edge.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and the vertical claw daytime running lights switched on with a clean glow, not a flare. Full grille, both headlights and the front wheel in frame. Hero framing — confident and planted.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1 so the two read as a pair. Tail lights lit: three horizontal claw-shaped LED bars per side on a gloss black rear panel. Tailgate, rear bumper and rear wheel clearly visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward over the centre console: small i-Cockpit steering wheel with the lion emblem, the raised digital instrument cluster seen above the wheel rim, the central touchscreen and the chrome piano-key switches. Clean black cabin, no wear, nothing on the seats. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient light inside the cabin, the studio background dark and softly defocused through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. The licence plate must be a blank unmarked European plate with no characters on it. No people, no hands, no reflections of people or camera gear. No second vehicle, no traffic cones, no showroom fixtures. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 2 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/toyota-yaris-cross.jpg" alt="Toyota Yaris Cross"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 2</div>
+    <div class="name">Toyota Yaris Cross</div>
+    <div class="desc"><b>Бежовата/пясъчна с черен покрив.</b> Хибрид, 2025.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/toyota-yaris-cross/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/toyota-yaris-cross/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/toyota-yaris-cross/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Toyota Yaris Cross · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2025 Toyota Yaris Cross Hybrid, small crossover SUV. Two-tone body: warm sand / champagne beige metallic paint with a contrasting gloss black roof and black A-pillars. Matte black wheel-arch cladding and black lower door trim all around. Dark two-tone alloy wheels with a machined face. Slim LED headlights with the Toyota emblem in the centre of a body-coloured upper grille and a wide black lower grille. Black roof rails, small roof spoiler, "HYBRID" badge on the front wing. Short overhangs, high stance, chunky proportions for its size. Interior: black, with bronze contrast stitching on the dashboard and door cards, a digital instrument cluster, a tablet-style central touchscreen standing proud of the dashboard, circular air vents on the passenger side, physical climate dials below the screen.
+
+COLOUR DISCIPLINE
+The sand paint is the star: keep it warm and creamy against the near-black set and let the gold rim light rake along the shoulder line. It must not drift orange, muddy, pink or grey. The black roof must stay separated from the black background by clear rim light along the roof edge.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no windows, no props.
+- Floor: polished dark grey-black with a soft, believable reflection of the car at roughly 25% opacity that fades out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a single clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the edges of the bodywork. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- A faint warm halo behind the car separates it from the background. Nothing else in frame.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Freshly detailed glossy paint, clean dark glass, matte black tyres. Sharp throughout, rich blacks that still hold detail. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Full grille, both headlights and the front wheel in frame. The two-tone split between sand body and black roof must read instantly.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: slim wraparound LED units joined by a dark trim strip across the tailgate, Toyota emblem centred, roof spoiler above. Rear bumper with black lower cladding and the rear wheel clearly visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the Toyota emblem, digital instrument cluster, the raised central touchscreen and the circular vents. Black cabin with bronze contrast stitching. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, studio background dark and softly defocused through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 3 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/peugeot-expert.jpg" alt="Peugeot Expert"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 3</div>
+    <div class="name">Peugeot Expert</div>
+    <div class="desc"><b>Тъмносиният ван, 7+1 места.</b> Единственият с <b>4 кадъра</b> — има и отделен за кабината.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-expert/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-expert/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-expert/03-interior.jpg">03-interior</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-expert/04-cabin.jpg">04-cabin</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Peugeot Expert · 4 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the vehicle described below and generate FOUR SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE VEHICLE
+2020 Peugeot Expert passenger van, eight seats, long wheelbase. Deep metallic navy blue paint. Silver multi-spoke alloy wheels. Wide chrome-trimmed grille bar with the older flat Peugeot lion emblem, large angular headlights with a chrome insert, black lower bumper section. Sliding side door with a chrome rail, body-coloured door handles, tall glasshouse with tinted rear windows, flat roof. "EXPERT" lettering on the rear door. Boxy, tall, functional proportions — but shot so it looks premium, not commercial. Interior: grey and black cloth seats, hard-wearing dark plastics, a small central touchscreen, a tall floor-mounted manual gearstick on the centre console, three rows of passenger seating behind the front pair.
+
+COLOUR DISCIPLINE
+The navy blue must stay rich and readable against the dark set — deep and saturated, never washing out to grey or collapsing into black. The gold rim light along the roof edge and shoulder is what separates the van from the background.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the vehicle fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the van, drawing a clean highlight along the roof rail and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Because the vehicle is tall and long, step the camera back so it fits comfortably with margin. Keep verticals dead straight — no leaning walls, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, van turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights on. Full grille, windscreen, sliding door and front wheel in frame. It should look clean, capable and family-ready — not like a work van.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tall vertical tail lights lit on both sides of the rear doors, Peugeot lion centred on the rear door, "EXPERT" lettering visible. Rear wheel and the long flank with the sliding door rail in frame. Same set, same lighting, same lens.
+
+IMAGE 3 — PASSENGER CABIN
+From the rear of the passenger compartment looking forward down the seat rows toward the windscreen. Grey and black cloth seats in neat rows, clean floor mats, generous headroom clearly readable, side windows dark. Soft warm cabin lighting, background outside the glass dark and defocused. Nothing on the seats, no luggage.
+
+IMAGE 4 — DRIVER CABIN
+Front cabin shot from the passenger side: steering wheel with the Peugeot emblem, dashboard, central touchscreen, air vents and the tall manual gearstick on the console. Grey-black plastics and cloth. The screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos. Warm ambient light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the vehicle.</pre>
+ </div>
+</div>
+
+<!-- 4 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/vw-golf-gte.jpg" alt="VW Golf GTE"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 4</div>
+    <div class="name">VW Golf GTE</div>
+    <div class="desc"><b>Белият спортен Golf със синята лента на решетката</b> и черни джанти. Plug-in хибрид.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf-gte/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf-gte/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf-gte/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">VW Golf GTE · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2023 Volkswagen Golf GTE, Mk8 five-door hatchback, plug-in hybrid hot-hatch version. Pure white paint. Black multi-spoke alloy wheels with blue brake callipers behind them. The signature illuminated blue light strip runs horizontally across the narrow grille and connects the two slim LED headlights. Blue accent line along the front lip spoiler, small "GTE" badge on the front wing and on the grille, gloss black roof spoiler, gloss black mirror caps, honeycomb lower air intakes. Sporty, planted, low stance. Interior: black, flat-bottomed sports steering wheel with the VW roundel and a GTE badge, fully digital cockpit, wide central touchscreen with touch-slider controls beneath it, blue ambient light lines running across the dashboard and door cards, black seats with blue contrast stitching.
+
+COLOUR DISCIPLINE
+White against a dark set blows out easily. Hold the highlights on the bonnet and roof, keep the white clean and cool-neutral — never grey, never cream, never yellow. The blue grille strip, the blue callipers and the blue ambient interior lighting must stay saturated and clearly visible; they are the identity of this car.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and the blue grille light strip switched on. Full grille, both headlights, front lip and the front wheel in frame. Aggressive but clean hot-hatch stance.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Slim LED tail lights lit, VW roundel centred on the tailgate with the GTE badge beneath it, black roof spoiler, body-colour diffuser with hidden exhausts, rear wheel with blue calliper visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: flat-bottomed steering wheel with the VW roundel and GTE badge, digital cockpit, the wide central touchscreen. Black cabin with blue ambient light lines across the dashboard and doors. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Studio background dark and softly defocused through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 5 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/vw-t-roc.jpg" alt="VW T-Roc"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 5</div>
+    <div class="name">VW T-Roc</div>
+    <div class="desc"><b>Черният малък VW кросоувър</b> със сребристо-черни джанти и хромирани релси на покрива.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/vw-t-roc/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-t-roc/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-t-roc/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">VW T-Roc · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2022 Volkswagen T-Roc, compact crossover SUV. Gloss black paint. Two-tone alloy wheels — machined silver faces with black inserts. Wide chrome grille bar carrying the VW roundel, running into slim LED headlights. Silver roof rails, chrome window surrounds, black wheel-arch trim, silver skid-plate inserts front and rear. "T-ROC" lettering across the tailgate. Raised crossover stance, short overhangs, coupé-ish roofline with a small roof spoiler. Interior: black, steering wheel with the VW roundel, digital instrument cluster, a free-standing central touchscreen on top of the dashboard, carbon-look dashboard trim, physical climate controls below the screen.
+
+COLOUR DISCIPLINE
+Black on a dark set is the hardest shot. Push the warm rim light so the roofline, the shoulder crease, the wheel arches and the raised stance are clearly drawn. The machined silver wheel faces and the chrome grille bar should catch the key light and act as a second focal point. No panel may collapse into flat black.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Full grille with the chrome bar and roundel, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit, VW roundel centred on the tailgate with "T-ROC" lettering beneath, roof spoiler above, silver skid plate in the rear bumper, rear wheel visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the VW roundel, digital instrument cluster and the free-standing central touchscreen. Black cabin, carbon-look dashboard trim, climate dials below the screen. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 6 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/peugeot-3008.jpg" alt="Peugeot 3008"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 6</div>
+    <div class="name">Peugeot 3008</div>
+    <div class="desc"><b>Маслинено-зеленият (каки) SUV.</b> По-малкият брат на 5008.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-3008/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-3008/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-3008/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Peugeot 3008 · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2020 Peugeot 3008, compact SUV, second generation. Olive / khaki green metallic paint with a fine metallic flake. Two-tone diamond-cut alloy wheels — machined silver faces with dark grey pockets. Wide chequered grille with a chrome surround and the flat Peugeot lion emblem, sharp swept headlights with vertical claw-shaped LED daytime running lights dropping into the front bumper. Black roof rails, gloss black roof, chrome window surrounds, black wheel-arch cladding, "3008" lettering on the tailgate. Interior: black, Peugeot i-Cockpit — small flat-topped steering wheel, digital instrument cluster mounted high above the wheel rim, central touchscreen angled toward the driver with a row of chrome piano-key switches beneath it, satin metal trim on the console and doors.
+
+COLOUR DISCIPLINE
+This paint is the trickiest in the fleet: a muted olive-khaki green with metallic sparkle. It must NOT turn brown, bronze, grey or army green. Under the warm rim light it should read as a deep, expensive olive with visible metallic flake in the highlights and a cooler, greener tone in the shadows.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and the vertical claw daytime running lights on. Full chequered grille, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: three horizontal claw-shaped LED bars per side on a gloss black rear panel spanning the tailgate. "3008" lettering, black roof spoiler, rear wheel visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: small i-Cockpit steering wheel with the lion emblem, the raised digital instrument cluster seen above the wheel rim, the central touchscreen and the chrome piano-key switches. Black cabin, satin metal trim. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 7 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/kia-ceed.jpg" alt="Kia Ceed SW"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 7</div>
+    <div class="name">Kia Ceed SW</div>
+    <div class="desc"><b>Бялото Kia комби</b> (дългото, с багажник). Единствената Kia в парка.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/kia-ceed/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/kia-ceed/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/kia-ceed/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Kia Ceed SW · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2022 Kia Ceed SW, five-door estate / station wagon. White paint. Multi-spoke alloy wheels with machined silver faces and black pockets. The narrow "tiger-nose" grille in gloss black with a chrome surround, carrying the current flat KIA lettering emblem. Slim swept LED headlights with an L-shaped daytime running light signature, chrome window surrounds, black roof rails, a long estate roofline ending in a small roof spoiler, "CEED" lettering on the tailgate. Interior: black, steering wheel with the KIA lettering emblem, twin analogue dials with a small screen between them, a free-standing central touchscreen on the dashboard, physical climate dials below it, satin silver trim strips on the doors and dashboard.
+
+COLOUR DISCIPLINE
+White against a dark set must keep detail. Hold the highlights on the bonnet, roof and shoulder, keep the white clean and neutral — never grey, never yellow, never blown to paper-white. Let the gold rim light run the full length of the roofline; on an estate that long line is the whole shot.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Because this is a long estate, step back far enough that the whole body including the rear overhang sits comfortably in frame with margin on both sides. Straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Full tiger-nose grille, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit — slim horizontal LED units at the corners of the tailgate — KIA lettering emblem centred, "CEED" badge, roof spoiler above, twin chrome exhaust tips in the rear bumper, rear wheel visible. The long estate roofline must read clearly. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the KIA emblem, twin analogue dials, the free-standing central touchscreen and the climate dials below it. Black cabin with satin silver trim. Screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 8 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/vw-golf-alltrack.jpg" alt="VW Golf Alltrack"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 8</div>
+    <div class="name">VW Golf Alltrack</div>
+    <div class="desc"><b>Сребристо-шампанското VW комби</b> с повдигнат клирънс. Не го бъркай с белия Golf (промпт 9) — това е дългото.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf-alltrack/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf-alltrack/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf-alltrack/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">VW Golf Alltrack · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2018 Volkswagen Golf Alltrack, Mk7 estate with 4MOTION all-wheel drive. Champagne silver-beige metallic paint with a fine metallic flake. Silver multi-spoke alloy wheels. Raised ride height with dark grey plastic wheel-arch extensions and matching sill cladding running the length of the car. Brushed silver skid-plate elements under the front and rear bumpers, silver roof rails, chrome window surrounds, honeycomb lower grille, chrome grille bars with the VW roundel, "4MOTION" badge on the tailgate, twin chrome exhaust tips on the left side. Long estate roofline. Interior: black, steering wheel with the VW roundel and an ALLTRACK badge, twin analogue dials with red needles and a small display between them, a square central touchscreen in the dashboard, physical climate dials below, a DSG automatic gear selector on the console, dark brushed trim strips across the dashboard and doors.
+
+COLOUR DISCIPLINE
+The paint is a warm champagne silver, not plain grey. Under the gold rim light it should glow softly and show fine metallic sparkle in the highlights. Keep the dark plastic cladding clearly distinct from the body paint, and make the raised stance obvious — this car sits higher than a normal estate.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Long estate — step back so the whole body fits with margin on both sides. Straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Chrome grille bars with the roundel, both headlights, the silver skid plate and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit, VW roundel centred on the tailgate, "4MOTION" badge, silver roof rails, rear skid plate and twin chrome exhaust tips on the left, rear wheel visible. The long estate roofline and the dark cladding along the sills must read clearly. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: steering wheel with the VW roundel and ALLTRACK badge, twin analogue dials with red needles, the square central touchscreen, climate dials and the DSG gear selector on the console. Black cabin with dark brushed trim. Screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 9 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/vw-golf.jpg" alt="VW Golf"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 9</div>
+    <div class="name">VW Golf</div>
+    <div class="desc"><b>Белият обикновен Golf</b> (късият хечбек), сребърни джанти. Има <b>теглич</b> отзад — влиза в промпта.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/vw-golf/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">VW Golf · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2018 Volkswagen Golf, Mk7 five-door hatchback, standard trim (not a GTI, not a sports version). White paint. Silver twin-spoke alloy wheels. Two chrome grille bars with the VW roundel in the centre, halogen headlights with a chrome insert, simple body-coloured bumpers, chrome window surrounds, "GOLF" lettering on the tailgate with a "TSI" badge, a small roof spoiler above the rear window. A black tow bar is fitted under the rear bumper — keep it, it is on the real car. Modest, tidy, compact hatchback proportions. Interior: black, base specification — steering wheel with the VW roundel, twin analogue dials with a small display between them, a small square touchscreen in the dashboard, three round physical climate dials below it, a manual gearstick with a black leather boot, black cloth seats.
+
+COLOUR DISCIPLINE
+White against a dark set must keep detail: hold the highlights on the bonnet and roof, keep the white clean and neutral, never grey or yellow. The silver wheel faces and the chrome grille bars catch the key light. This is the cheapest car in the fleet — the photography must make it look every bit as expensive as the flagship SUV shot on the same set.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights on. Chrome grille bars with the roundel, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit, VW roundel centred on the tailgate with "GOLF" and "TSI" lettering, roof spoiler above, the black tow bar visible under the rear bumper, rear wheel in frame. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the passenger side looking across at the driver's side: steering wheel with the VW roundel, twin analogue dials, the small square touchscreen, three round climate dials and the manual gearstick. Black cloth seats, clean and tidy base-spec cabin. Screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 10 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/peugeot-308-sw.jpg" alt="Peugeot 308 SW"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 10</div>
+    <div class="name">Peugeot 308 SW</div>
+    <div class="desc"><b>Синьото Peugeot комби</b> (GT Line, червени шевове вътре). В сегашната снимка надписът от стената се отразява в капака — новият промпт го забранява изрично.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-308-sw/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-308-sw/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-308-sw/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Peugeot 308 SW · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2016 Peugeot 308 SW, five-door estate, GT Line trim. Deep metallic blue paint with a strong metallic flake. Silver diamond-cut multi-spoke alloy wheels. Chrome grille surround with the flat Peugeot lion emblem, swept headlights with an LED daytime running light strip along the lower edge, chrome window surrounds running the full length of the glasshouse, panoramic glass roof, silver roof rails, "308" and "GT Line" badges, twin trapezoidal chrome exhaust tips in a body-colour diffuser. Long, low estate proportions. Interior: black with RED contrast stitching on the seats, steering wheel and gear boot — that red stitching is the GT Line signature and must be present. Small flat-topped i-Cockpit steering wheel with the lion emblem, instrument dials seen above the wheel rim, a central touchscreen with a slim row of shortcut buttons beneath it, a manual gearstick with a chrome-trimmed boot, satin metal trim on the console.
+
+CRITICAL — CLEAN PAINT
+The bonnet and windscreen must be completely clean: only soft studio highlights. No reflected letters, no reflected signage, no reflected logos or shapes of any kind anywhere in the paint or glass.
+
+COLOUR DISCIPLINE
+The blue is deep and saturated with visible metallic sparkle where the key light hits. Keep it jewel-like against the near-black set — never navy-black, never washed-out sky blue.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Long estate — step back so the whole body fits with margin. Straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Chrome grille with the lion emblem, both headlights and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: the three-claw LED signature per side. Lion emblem centred on the tailgate, "GT Line" badge, chrome window trim along the flank, twin chrome exhaust tips, rear wheel visible. The long estate roofline must read clearly. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the passenger side looking across the cabin: small i-Cockpit steering wheel with the lion emblem, dials above the wheel rim, the central touchscreen with its row of shortcut buttons, the manual gearstick with chrome-trimmed boot. Black cabin with red contrast stitching clearly visible on the seats, wheel and gear boot. Screen is on but shows only a neutral abstract dark interface with no legible text, no icons, no logos. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No reflected signage in the paint or glass. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<!-- 11 -->
+<div class="car">
+ <div class="top">
+  <div class="thumb"><img src="racv-thumbs/peugeot-2008.jpg" alt="Peugeot 2008"><div class="cap">СЕГА</div></div>
+  <div class="info">
+    <div class="n">ПРОМПТ 11</div>
+    <div class="name">Peugeot 2008</div>
+    <div class="desc"><b>Червената малка кола.</b> Единствената с ярък цвят в целия парк.</div>
+    <div class="links">текущи снимки:
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-2008/01-front.jpg">01-front</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-2008/02-rear.jpg">02-rear</a> ·
+      <a href="https://rentacarvratsa.com/assets/cars/peugeot-2008/03-interior.jpg">03-interior</a></div>
+  </div>
+ </div>
+ <div class="prompt"><button class="copy" onclick="cp(this)">Копирай</button><span class="plabel">Peugeot 2008 · 3 кадъра</span>
+<pre>Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2019 Peugeot 2008, first-generation small crossover (facelift). Deep red metallic paint. Dark multi-spoke alloy wheels with machined silver edges. Chrome grille surround with the flat Peugeot lion emblem, swept headlights with a chrome brow, brushed silver skid-plate elements under the front and rear bumpers, black wheel-arch cladding and black side sills, silver roof rails, chrome window surrounds, small roof spoiler, "2008" lettering on the tailgate. Compact, slightly raised crossover stance. Interior: black, small flat-topped steering wheel with the lion emblem, a digital instrument cluster set high on the dashboard, a wide central touchscreen with a navigation map, a row of chrome toggle switches below it, carbon-look textured dashboard trim, satin metal air vent surrounds.
+
+COLOUR DISCIPLINE
+Red is the one colour that can wreck this set. Keep it a deep, rich metallic red with detail held on the shadow side — no neon glow, no orange cast, no clipped blown-out red on the bonnet or doors. The warm gold rim light must sit on top of the red without turning it orange.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and daytime running lights on. Chrome grille with the lion emblem, both headlights, the silver skid plate and the front wheel in frame.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tail lights lit: the three-claw LED signature per side. Lion emblem centred on the tailgate, "2008" lettering, silver roof rails, silver rear skid plate, rear wheel visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward: small steering wheel with the lion emblem, the raised digital instrument cluster, the wide central touchscreen and the row of chrome toggle switches beneath it. Black cabin with carbon-look dashboard texture. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient cabin light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.</pre>
+ </div>
+</div>
+
+<div class="tip" style="margin-top:30px">
+  <b>Като са готови кадрите</b> — кръсти файловете <code>01-front.jpg</code>, <code>02-rear.jpg</code>, <code>03-interior.jpg</code> (при вана и <code>04-cabin.jpg</code>), сложи ги в папка с името на колата и ги прати. Останалото — webp/avif, кроп, качване на сайта — е моя работа.
+</div>
+
+</div>
+
+<script>
+function cp(btn){
+  var pre = btn.parentNode.querySelector('pre'), t = pre.innerText;
+  var done = function(){ var o=btn.textContent; btn.textContent='Копирано ✓'; btn.classList.add('done');
+    setTimeout(function(){ btn.textContent=o; btn.classList.remove('done'); },1600); };
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(done,function(){fb(t,done)}); }
+  else { fb(t,done); }
+}
+function fb(t,done){
+  var ta=document.createElement('textarea'); ta.value=t; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');done();}catch(e){} document.body.removeChild(ta);
+}
+</script>
+</body>
+</html>

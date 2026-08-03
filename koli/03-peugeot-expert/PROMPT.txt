@@ -1,0 +1,32 @@
+Professional automotive studio photography. Shoot the vehicle described below and generate FOUR SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE VEHICLE
+2020 Peugeot Expert passenger van, eight seats, long wheelbase. Deep metallic navy blue paint. Silver multi-spoke alloy wheels. Wide chrome-trimmed grille bar with the older flat Peugeot lion emblem, large angular headlights with a chrome insert, black lower bumper section. Sliding side door with a chrome rail, body-coloured door handles, tall glasshouse with tinted rear windows, flat roof. "EXPERT" lettering on the rear door. Boxy, tall, functional proportions — but shot so it looks premium, not commercial. Interior: grey and black cloth seats, hard-wearing dark plastics, a small central touchscreen, a tall floor-mounted manual gearstick on the centre console, three rows of passenger seating behind the front pair.
+
+COLOUR DISCIPLINE
+The navy blue must stay rich and readable against the dark set — deep and saturated, never washing out to grey or collapsing into black. The gold rim light along the roof edge and shoulder is what separates the van from the background.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the vehicle fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no props.
+- Floor: polished dark grey-black with a soft reflection at roughly 25% opacity, fading out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the van, drawing a clean highlight along the roof rail and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the body edges. Clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Because the vehicle is tall and long, step the camera back so it fits comfortably with margin. Keep verticals dead straight — no leaning walls, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Glossy detailed paint, clean dark glass, matte black tyres. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, van turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights on. Full grille, windscreen, sliding door and front wheel in frame. It should look clean, capable and family-ready — not like a work van.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1. Tall vertical tail lights lit on both sides of the rear doors, Peugeot lion centred on the rear door, "EXPERT" lettering visible. Rear wheel and the long flank with the sliding door rail in frame. Same set, same lighting, same lens.
+
+IMAGE 3 — PASSENGER CABIN
+From the rear of the passenger compartment looking forward down the seat rows toward the windscreen. Grey and black cloth seats in neat rows, clean floor mats, generous headroom clearly readable, side windows dark. Soft warm cabin lighting, background outside the glass dark and defocused. Nothing on the seats, no luggage.
+
+IMAGE 4 — DRIVER CABIN
+Front cabin shot from the passenger side: steering wheel with the Peugeot emblem, dashboard, central touchscreen, air vents and the tall manual gearstick on the console. Grey-black plastics and cloth. The screen is on but shows only a neutral abstract dark map — no legible text, no icons, no logos. Warm ambient light, dark defocused background through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. Blank unmarked European licence plate with no characters. No people, no hands, no reflections of people or camera gear. No second vehicle. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the vehicle.

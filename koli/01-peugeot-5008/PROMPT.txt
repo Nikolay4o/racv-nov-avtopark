@@ -1,0 +1,30 @@
+Professional automotive studio photography. Shoot the car described below and generate THREE SEPARATE IMAGES, one after another — never a collage, never a grid.
+
+THE CAR
+2024 Peugeot 5008, latest generation, large seven-seat SUV. Gloss black metallic paint. Black multi-spoke alloy wheels with a dark diamond-cut face. Blacked-out grille with the modern shield-shaped Peugeot lion emblem in the centre. Three vertical claw-shaped LED daytime running light blades falling from each headlight down the front bumper — this is the model's signature and must be clearly visible. Black roof rails, black window surrounds, subtle "5008" lettering on the bonnet edge. Long SUV proportions, muscular shoulder line, flush door handles. Interior: black, Peugeot i-Cockpit — small flat-topped steering wheel, digital instrument cluster mounted high above the wheel rim, wide central touchscreen angled toward the driver, a row of chrome piano-key switches beneath it, brushed metal trim on the centre console.
+
+COLOUR DISCIPLINE
+Black on a dark set is the hardest shot in the fleet. Push the warm rim light so the roofline, the shoulder crease, the wheel arches and the front bumper edges are clearly drawn in warm light. Every panel keeps readable detail — the car must never collapse into a silhouette or a black blob.
+
+STUDIO SETUP — identical for every image so the whole fleet matches
+- Seamless dark studio cyclorama. Charcoal-to-black vertical gradient, about #151515 behind the car fading to #050505 at the frame edges. No walls, no showroom, no furniture, no plants, no windows, no props.
+- Floor: polished dark grey-black with a soft, believable reflection of the car at roughly 25% opacity that fades out within a metre. Not a mirror.
+- Key light: one large soft overhead strip running the length of the car, drawing a single clean highlight down the roofline and shoulder.
+- Rim light: warm gold, around 3200K, from the rear three-quarter, tracing the edges of the bodywork. This is the signature of the set — clearly present, never blown out.
+- Fill: subtle cool fill on the shadow side so no panel goes dead black.
+- A faint warm halo behind the car separates it from the background. Nothing else in frame.
+- Camera: full-frame, 50mm equivalent, f/8, tripod at wheel-arch height. Natural perspective, straight verticals, no wide-angle stretch.
+- Finish: photorealistic editorial car photography. Freshly detailed glossy paint, clean dark glass, matte black tyres with no shine-spray look. Sharp throughout, rich blacks that still hold detail. NOT a 3D render, NOT CGI, NOT an illustration.
+- Output: landscape 3:2, maximum resolution, breathing room on all sides — the image will be cropped to 16:10 later, so nothing important may touch the frame edge.
+
+IMAGE 1 — FRONT THREE-QUARTER
+Front three-quarter from the left, car turned about 35 degrees to the camera, front wheels angled slightly toward the lens. Headlights and the vertical claw daytime running lights switched on with a clean glow, not a flare. Full grille, both headlights and the front wheel in frame. Hero framing — confident and planted.
+
+IMAGE 2 — REAR THREE-QUARTER
+Rear three-quarter from the right, mirroring image 1 so the two read as a pair. Tail lights lit: three horizontal claw-shaped LED bars per side on a gloss black rear panel. Tailgate, rear bumper and rear wheel clearly visible. Same set, same lighting, same lens.
+
+IMAGE 3 — INTERIOR
+From the rear seat looking forward over the centre console: small i-Cockpit steering wheel with the lion emblem, the raised digital instrument cluster seen above the wheel rim, the central touchscreen and the chrome piano-key switches. Clean black cabin, no wear, nothing on the seats. Screens are on but show only a neutral abstract dark map — no legible text, no icons, no logos, no place names. Warm ambient light inside the cabin, the studio background dark and softly defocused through the glass.
+
+ABSOLUTE BANS in every image
+No text, letters or numbers anywhere in the frame. No rental-company name, logo or wall sign. No QR code. No watermark. No icon strip, no feature bar, no price badge. The licence plate must be a blank unmarked European plate with no characters on it. No people, no hands, no reflections of people or camera gear. No second vehicle, no traffic cones, no showroom fixtures. The only branding allowed is the manufacturer's own emblem and model lettering that physically exists on the car.
