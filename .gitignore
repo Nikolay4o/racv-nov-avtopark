@@ -1,0 +1,4 @@
+node_modules/
+.chrome-profil/
+_debug/
+*.log

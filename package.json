@@ -1,0 +1,19 @@
+{
+  "name": "racv-nov-avtopark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Генериране на новите студийни снимки на автопарка (Rent a Car Vratsa)",
+  "scripts": {
+    "login": "node avtomat.mjs --login",
+    "generirai": "node avtomat.mjs",
+    "proba": "node avtomat.mjs --only peugeot-5008",
+    "proveri": "node proveri.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
